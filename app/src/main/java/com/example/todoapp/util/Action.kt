@@ -1,4 +1,4 @@
-package com.example.todoapp.ui.navigation
+package com.example.todoapp.util
 
 enum class Action {
     ADD,

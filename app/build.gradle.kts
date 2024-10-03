@@ -67,6 +67,10 @@ dependencies {
     implementation(libs.data.store)
     implementation(libs.hilt)
     ksp(libs.hilt.compiler)
+
+    //compose navigation
+    implementation(libs.compose.navigation)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

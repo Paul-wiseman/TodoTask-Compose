@@ -1,10 +1,11 @@
-package com.example.todoapp.ui.navigation
+package com.example.todoapp.ui.navigation.destination
 
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavType
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navArgument
-import com.example.todoapp.util.Constants.LIST_SCREEN
+import com.example.todoapp.util.Action
+import com.example.todoapp.util.Constants.TASK_ARGUMENT_KEY
 import com.example.todoapp.util.Constants.TASK_SCREEN
 
 fun NavGraphBuilder.taskComposable(
@@ -14,8 +15,8 @@ fun NavGraphBuilder.taskComposable(
     composable(
         route = TASK_SCREEN,
         arguments = listOf(
-            navArgument() {
-                type = NavType.StringType
+            navArgument(TASK_ARGUMENT_KEY) {
+                type = NavType.IntType
             },
         )
     ) {
